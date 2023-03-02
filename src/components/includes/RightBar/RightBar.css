@@ -13,9 +13,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-radius: 6px;
-    padding: 3%;
+    padding: 4%;
 }
 .iconBox {
     width: 8%;
@@ -26,9 +26,9 @@
     width: 100%;
 }
 .day {
-    font-family: 'Inter-Light';
+    font-family: 'Inter-Regular';
     font-size: 20px;
-    color: #555;
+    color: #777;
 }
 .arrowBox {
     width: 8%;
@@ -41,6 +41,9 @@
 .meal {
     margin: 10% 0;
 }
+.meal .breakfast,.lunch {
+    margin-bottom: 10%;
+}
 .meal .title {
     display: flex;
     justify-content: space-between;
@@ -50,8 +53,26 @@
 .meal .title h5 {
     font-size: 20px;
 }
-.meal .title span {
+.meal .title span.purchased {
     font-size: 13px;
+    color: #36de98;
+    background-color:#c7ffe5 ;
+    padding: 5px 8px;
+    border-radius: 50px;;
+}
+.meal .title span.ordered {
+    font-size: 13px;
+    color: #e9be87;
+    background-color:#fff3e1 ;
+    padding: 5px 8px;
+    border-radius: 50px;;
+}
+.meal .title span.not_ordered {
+    font-size: 13px;
+    color: #e65e6a;
+    background-color:#ffe7e9 ;
+    padding: 5px 8px;
+    border-radius: 50px;;
 }
 .meal span.time {
     display: block;
@@ -64,6 +85,7 @@
     border-radius: 6px;;
     display: flex;
     align-items: center;
+    margin-bottom: 4%;
 }
 .meal ul li div.foodBox {
     width: 25%;
@@ -76,7 +98,7 @@
 }
 .meal ul li div.textBox {}
 .meal ul li div.textBox h6 {
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 .meal ul li div.textBox div.price {
@@ -85,6 +107,7 @@
 .meal ul li div.textBox div.price span.currentPrice {
     display: flex;
     align-items: center;
+    margin-right: 10%;
 }
 .meal ul li div.textBox div.price span.currentPrice span.dollarBox {
     display: inline-block;
@@ -96,5 +119,18 @@
 }
 .meal ul li div.textBox div.price span.initialPrice {
     display: inline;
+    color: #777;
+    text-decoration: line-through;
 }
-
+.add {
+    background-color: #ffebde;
+    border: 1px dashed #ec6925;
+    border-radius: 8px;
+    padding: 6%;
+    text-align: center;
+}
+.add  a {
+    color:#ee793b;
+    text-decoration: none;
+    font-size: 18px;
+}

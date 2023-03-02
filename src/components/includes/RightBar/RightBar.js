@@ -4,6 +4,7 @@ import CalenderIcon from '../../../assets/images/Calender-Icon.svg'
 import DownArrow from '../../../assets/images/Down-Arrow.svg'
 import BreakFast1 from '../../../assets/images/Breakfast1.jpg'
 import Dollar from '../../../assets/images/Dollar.svg'
+import { BreakfastData, LunchData, DinnerData } from '../Data'
 
 function RightBar() {
   return (
@@ -20,23 +21,81 @@ function RightBar() {
       </div>
 
       <div className='meal'>
-        <div className='title'>
-          <h5>Breakfast</h5>
-          <span className='purchased'>Purchased</span>
-        </div> 
-        <span className='time'>06.30AM</span>
-        <ul className='foodItem'>
-          <li>
-            <div className='foodBox'><img src={BreakFast1} alt="food" /></div>
-            <div className='textBox'>
-              <h6>Nasi Padang Patikraja</h6>
-              <div className='price'>
-                <span className='currentPrice'><span className='dollarBox'><img src={Dollar} alt="dollar icon" /></span>8,10</span>
-                <span className='initialPrice'>$10,10</span>
-                </div>
-            </div>
-          </li>
-        </ul>
+        <div className='breakfast'>
+          <div className='title'>
+            <h5>Breakfast</h5>
+            <span className='purchased'>Purchased</span>
+          </div> 
+          <span className='time'>06.30AM</span>
+          <ul className='foodItem'>
+            {BreakfastData.map((item) => {
+              return(
+                <li key={item.id}>
+                  <div className='foodBox'><img src={item.image} alt="food" /></div>
+                  <div className='textBox'>
+                    <h6>Nasi Padang Patikraja</h6>
+                    <div className='price'>
+                      <span className='currentPrice'><span className='dollarBox'><img src={Dollar} alt="dollar icon" /></span>8,10</span>
+                      <span className='initialPrice'>$10,10</span>
+                    </div>
+                  </div>
+                </li>
+              )
+            })}  
+          </ul>
+        </div>
+
+        <div className='lunch'>
+          <div className='title'>
+            <h5>Lunch</h5>
+            <span className='ordered'>Being ordered</span>
+          </div> 
+          <span className='time'>01.30PM</span>
+          <ul className='foodItem'>
+            {LunchData.map((item) => {
+              return(
+                <li key={item.id}>
+                  <div className='foodBox'><img src={item.image} alt="food" /></div>
+                  <div className='textBox'>
+                    <h6>Nasi Padang Patikraja</h6>
+                    <div className='price'>
+                      <span className='currentPrice'><span className='dollarBox'><img src={Dollar} alt="dollar icon" /></span>8,10</span>
+                      <span className='initialPrice'>$10,10</span>
+                    </div>
+                  </div>
+                </li>
+              )
+            })}  
+          </ul>
+        </div>
+
+        <div className='dinner'>
+          <div className='title'>
+            <h5>Dinner</h5>
+            <span className='not_ordered'>Haven't ordered yet</span>
+          </div> 
+          <span className='time'>08.30PM</span>
+          <ul className='foodItem'>
+            {DinnerData.map((item) => {
+              return(
+                <li key={item.id}>
+                  <div className='foodBox'><img src={item.image} alt="food" /></div>
+                  <div className='textBox'>
+                    <h6>Nasi Padang Patikraja</h6>
+                    <div className='price'>
+                      <span className='currentPrice'><span className='dollarBox'><img src={Dollar} alt="dollar icon" /></span>8,10</span>
+                      <span className='initialPrice'>$10,10</span>
+                    </div>
+                  </div>
+                </li>
+              )
+            })}  
+          </ul>
+        </div>
+      </div>
+      
+      <div className='add'>
+        <a href='#'>Drop here to add</a>
       </div>
     </div>
   )
