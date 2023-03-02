@@ -6,15 +6,34 @@
     align-items: center;
 }
 .welcome {
-    margin-right: 5%;
+    margin-right: 6%;
 }
 .welcome h1 {
     margin-bottom: 13px;
+    font-size: 30px;
+    letter-spacing: 0.05em;
 }
 .welcome span {
     color: #777;
 }
-ul.menu {
+.menu {
+    width: 40%;
+}
+.menuContainer {
+    display: flex;
+}
+.menuBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 3% 5%;
+    margin-right: 6%;
+    font-size: 18px;
+
+}
+
+/* ul.menu {
     display: flex;
     font-family: 'Inter-Regular';
 }
@@ -25,13 +44,14 @@ ul.menu li {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100px;
 }
 ul.menu li a {
     display: block;
     font-size: 18px;
     width: 100%;
     text-decoration: none;
-}     
+}      */
 .search {
     background-color: #eee;
     border-radius: 30px;

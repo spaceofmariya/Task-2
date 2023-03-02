@@ -6,6 +6,9 @@
 ul,ol {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 @font-face {
   font-family: 'Inter-SemiBold';
   src: url('./assets/fonts/Inter-SemiBold.woff2') format('woff2'),
