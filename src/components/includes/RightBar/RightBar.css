@@ -38,3 +38,63 @@
 .arrowBox img {
     width: 100%;
 }
+.meal {
+    margin: 10% 0;
+}
+.meal .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7%;
+}
+.meal .title h5 {
+    font-size: 20px;
+}
+.meal .title span {
+    font-size: 13px;
+}
+.meal span.time {
+    display: block;
+    margin-bottom: 5%;
+}
+.meal ul {}
+.meal ul li {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 6px;;
+    display: flex;
+    align-items: center;
+}
+.meal ul li div.foodBox {
+    width: 25%;
+    margin-right: 5%;
+}
+.meal ul li div.foodBox img {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+}
+.meal ul li div.textBox {}
+.meal ul li div.textBox h6 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.meal ul li div.textBox div.price {
+    display: flex;
+}
+.meal ul li div.textBox div.price span.currentPrice {
+    display: flex;
+    align-items: center;
+}
+.meal ul li div.textBox div.price span.currentPrice span.dollarBox {
+    display: inline-block;
+    width: 30%;
+}
+.meal ul li div.textBox div.price span.currentPrice span.dollarBox img {
+    display: block;
+    width: 100%;
+}
+.meal ul li div.textBox div.price span.initialPrice {
+    display: inline;
+}
+
