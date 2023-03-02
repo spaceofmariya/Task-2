@@ -1,3 +1,52 @@
 .MainSpace {
-    background-color: rgb(247, 250, 249);
+    height: 150px; 
+    font-family: 'Inter-Medium';
+    padding: 2% 0;
+    display: flex;
+    align-items: center;
 }
+.welcome {
+    margin-right: 5%;
+}
+.welcome h1 {
+    margin-bottom: 13px;
+}
+.welcome span {
+    color: #777;
+}
+ul.menu {
+    display: flex;
+    font-family: 'Inter-Regular';
+}
+ul.menu li {
+    margin-right: 30px;
+    padding: 5% 7%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.menu li a {
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    text-decoration: none;
+}     
+.search {
+    background-color: #eee;
+    border-radius: 30px;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter-Regular';
+
+}
+.search span.searchText {
+    color:#777;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.search span.searchIcon {}
+
+
+

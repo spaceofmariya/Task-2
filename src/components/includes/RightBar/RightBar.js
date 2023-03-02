@@ -2,7 +2,6 @@ import React from 'react'
 import './RightBar.css'
 import CalenderIcon from '../../../assets/images/Calender-Icon.svg'
 import DownArrow from '../../../assets/images/Down-Arrow.svg'
-import BreakFast1 from '../../../assets/images/Breakfast1.jpg'
 import Dollar from '../../../assets/images/Dollar.svg'
 import { BreakfastData, LunchData, DinnerData } from '../Data'
 
