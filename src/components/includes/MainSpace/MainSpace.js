@@ -1,8 +1,9 @@
 import React from 'react'
+import './MainSpace.css'
 
 function MainSpace() {
   return (
-    <div>
+    <div className='MainSpace'>
       MainSpace
     </div>
   )
