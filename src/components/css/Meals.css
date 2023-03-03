@@ -1,5 +1,8 @@
 .Recommended {
     width: 72vw;
+    position:absolute;
+    top: 250px;
+    left: 8.6rem;
     /* margin: 0 auto; */
 }
 .Recommended .foodItem {

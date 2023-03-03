@@ -12,7 +12,12 @@ import Cart from './components/screens/Cart'
 import Settings from './components/screens/Settings'
 import Profile from './components/screens/Profile'
 import Support from './components/screens/Support'
-import Recommended from './components/screens/inner-screens/Recommended';
+import Recommended from './components/screens/inner-screens/Recommended'
+import Breakfast from './components/screens/inner-screens/Breakfast'
+import Lunch from './components/screens/inner-screens/Lunch'
+import Dinner from './components/screens/inner-screens/Dinner'
+import IceCream from './components/screens/inner-screens/IceCream'
+import Coffee from './components/screens/inner-screens/Coffee'
 
 function App() {
   return (
@@ -26,16 +31,24 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Menu />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/foodSite" element={<FoodSite />} />
-          <Route path="/favourites" element={<Favourites />} />
-          <Route path="/whiteCard" element={<WhiteCard />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/support" element={<Support />} />
+          <Route path="menu" element={<Menu />}>
+            <Route index element={<Recommended />} />
+            <Route path="recommended" element={<Recommended />} /> 
+            <Route path="breakfast" element={<Breakfast />} /> 
+            <Route path="lunch" element={<Lunch />} /> 
+            <Route path="dinner" element={<Dinner />} /> 
+            <Route path="iceCream" element={<IceCream />} /> 
+            <Route path="coffee" element={<Coffee />} />  
+          </Route>
+          <Route path="foodSite" element={<FoodSite />} />
+          <Route path="favourites" element={<Favourites />} />
+          <Route path="whiteCard" element={<WhiteCard />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="support" element={<Support />} />
         </Routes>
-        <Recommended />
+        {/* <Recommended /> */}
       </Router>
     </div>
 
