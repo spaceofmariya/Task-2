@@ -1,0 +1,55 @@
+.Recommended {
+    width: 72vw;
+    /* margin: 0 auto; */
+}
+.Recommended .foodItem {
+    background-color: #f7f4fa;
+    border-radius: 15px; 
+    display: inline-block;  
+    margin-right: 2%; 
+    margin-bottom: 2%;
+    /* width: 25%; */
+}
+.Recommended .foodItem .foodImage {
+    margin-bottom: 7%;
+}
+.Recommended .foodItem .foodImage img {
+    border-radius: 15px;
+}
+.Recommended .foodItem h4 {
+    padding: 0 5%;
+}
+.Recommended .foodItem .foodBoxBottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 5%;
+    /* padding-bottom: 2%; */
+}
+.Recommended .foodItem .foodBoxBottom .price {
+    display: flex;
+}
+.Recommended .foodItem .foodBoxBottom .price .currentPrice {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+.Recommended .foodItem .foodBoxBottom .price .currentPrice .dollarBox {
+    display: inline-block;
+    width: 30%;
+}
+.Recommended .foodItem .foodBoxBottom .price .currentPrice .dollarBox img {
+    display: block;
+    width: 100%;
+}
+.Recommended .foodItem .foodBoxBottom .price .initialPrice {
+    display: inline;
+    color: #777;
+    text-decoration: line-through;
+}
+.Recommended .foodItem .foodBoxBottom .order {
+    border: none;
+    background-color: #F46801;
+    color: #fff;
+    padding: 4% 7%;
+    border-radius: 30px;
+}

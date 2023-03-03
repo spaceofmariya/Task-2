@@ -1,0 +1,10 @@
+.Menu {
+    position: absolute;
+    top: 170px;
+    left: 8.4rem;
+    font-size: 50px;
+}
+h3 {
+    font-family: 'Inter-SemiBold';
+    font-size: 34px;
+}

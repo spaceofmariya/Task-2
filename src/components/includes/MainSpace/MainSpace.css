@@ -1,6 +1,6 @@
 .MainSpace {
     height: 150px; 
-    font-family: 'Inter-Medium';
+    font-family: 'Inter-SemiBold';
     padding: 2% 0;
     display: flex;
     align-items: center;
@@ -10,8 +10,7 @@
 }
 .welcome h1 {
     margin-bottom: 13px;
-    font-size: 30px;
-    letter-spacing: 0.05em;
+    font-size: 34px;
 }
 .welcome span {
     color: #777;
@@ -32,30 +31,10 @@
     font-size: 18px;
 
 }
-
-/* ul.menu {
-    display: flex;
-    font-family: 'Inter-Regular';
-}
-ul.menu li {
-    margin-right: 30px;
-    padding: 5% 7%;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-}
-ul.menu li a {
-    display: block;
-    font-size: 18px;
-    width: 100%;
-    text-decoration: none;
-}      */
 .search {
     background-color: #eee;
     border-radius: 30px;
-    padding: 1%;
+    padding: 1% 1.8%;
     display: flex;
     align-items: center;
     font-family: 'Inter-Regular';

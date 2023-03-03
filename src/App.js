@@ -12,6 +12,7 @@ import Cart from './components/screens/Cart'
 import Settings from './components/screens/Settings'
 import Profile from './components/screens/Profile'
 import Support from './components/screens/Support'
+import Recommended from './components/screens/inner-screens/Recommended';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <RightBar/>
         </div>
         <Routes>
-          {/* <Route path="/" element={<Menu />} /> */}
+          <Route path="/" element={<Menu />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/foodSite" element={<FoodSite />} />
           <Route path="/favourites" element={<Favourites />} />
@@ -34,6 +35,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/support" element={<Support />} />
         </Routes>
+        <Recommended />
       </Router>
     </div>
 
