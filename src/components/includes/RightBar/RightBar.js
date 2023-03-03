@@ -3,7 +3,7 @@ import './RightBar.css'
 import CalenderIcon from '../../../assets/images/Calender-Icon.svg'
 import DownArrow from '../../../assets/images/Down-Arrow.svg'
 import Dollar from '../../../assets/images/Dollar.svg'
-import { BreakfastData, LunchData, DinnerData } from '../Data'
+import { Breakfast, Lunch, Dinner } from '../Data'
 
 function RightBar() {
   return (
@@ -26,8 +26,8 @@ function RightBar() {
             <span className='purchased'>Purchased</span>
           </div> 
           <span className='time'>06.30AM</span>
-          <ul className='foodItem'>
-            {BreakfastData.map((item) => {
+          <ul className='food'>
+            {Breakfast.map((item) => {
               return(
                 <li key={item.id}>
                   <div className='foodBox'><img src={item.image} alt="food" /></div>
@@ -50,8 +50,8 @@ function RightBar() {
             <span className='ordered'>Being ordered</span>
           </div> 
           <span className='time'>01.30PM</span>
-          <ul className='foodItem'>
-            {LunchData.map((item) => {
+          <ul className='food'>
+            {Lunch.map((item) => {
               return(
                 <li key={item.id}>
                   <div className='foodBox'><img src={item.image} alt="food" /></div>
@@ -74,8 +74,8 @@ function RightBar() {
             <span className='not_ordered'>Haven't ordered yet</span>
           </div> 
           <span className='time'>08.30PM</span>
-          <ul className='foodItem'>
-            {DinnerData.map((item) => {
+          <ul className='food'>
+            {Dinner.map((item) => {
               return(
                 <li key={item.id}>
                   <div className='foodBox'><img src={item.image} alt="food" /></div>

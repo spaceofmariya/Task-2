@@ -1,9 +1,10 @@
 import React from 'react'
+import '../css/OtherMenu.css'
 
 function FoodSite() {
   return (
-    <div>
-     <h1> Coming Soon..! </h1>
+    <div className='FoodSite'>
+      <h3> Coming Soon..! </h3>
     </div>
   )
 }

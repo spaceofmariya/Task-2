@@ -1,9 +1,10 @@
 import React from 'react'
+import '../css/OtherMenu.css'
 
 function WhiteCard() {
   return (
-    <div>
-      Coming Soon..!
+    <div className='WhiteCard'>
+      <h3> Coming Soon..! </h3>
     </div>
   )
 }

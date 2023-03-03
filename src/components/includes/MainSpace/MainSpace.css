@@ -1,7 +1,7 @@
 .MainSpace {
-    height: 150px; 
+    height: 130px; 
     font-family: 'Inter-SemiBold';
-    padding: 2% 0;
+    padding: 1.5% 0;
     display: flex;
     align-items: center;
 }

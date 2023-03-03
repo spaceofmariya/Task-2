@@ -32,7 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Menu />} />
           <Route exact path="menu" element={<Menu />}>
-            {/* <Route index element={<Recommended />} /> */}
+            <Route index element={<Recommended />} />
             <Route path="recommended" element={<Recommended />} /> 
             <Route path="breakfast" element={<Breakfast />} /> 
             <Route path="lunch" element={<Lunch />} /> 

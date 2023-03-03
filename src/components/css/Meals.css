@@ -1,66 +1,67 @@
-.Recommended {
+.Recommended,.Breakfast,.Lunch,.Dinner,.IceCream,.Coffee {
     width: 67.5%;
     height: 65%;
     position:absolute;
-    top: 35%;
-    left: 11rem;
+    top: 31%;
+    left: 9%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* margin: 0 auto; */
 }
-.Recommended .foodItem {
+.foodItem {
     background-color: #f7f4fa;
     border-radius: 15px; 
     display: inline-block;  
-    margin-bottom: 2%;
+    margin-bottom: 1.5%;
     width: 31%;
+    height: 50%;
 }
-/* .Recommended.foodItem:first-child {
-    margin-right: 0;
-} */
-.Recommended .foodItem .foodImage {
+.foodItem .foodImage {
     width: 100%;
-    margin-bottom: 7%;
+    height: 73%;
+    margin-bottom: 3%;
 }
-.Recommended .foodItem .foodImage img {
+.foodItem .foodImage img {
     width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
-.Recommended .foodItem h4 {
+.foodItem h4 {
     padding: 0 5%;
 }
-.Recommended .foodItem .foodBoxBottom {
+.foodItem .foodBoxBottom {
     display: flex;
     justify-content: space-between;
-    padding: 4% 5%;
-    /* padding-bottom: 2%; */
+    padding: 2% 5%;
 }
-.Recommended .foodItem .foodBoxBottom .price {
+.foodItem .foodBoxBottom .price {
     display: flex;
 }
-.Recommended .foodItem .foodBoxBottom .price .currentPrice {
+.foodItem .foodBoxBottom .price .currentPrice {
     display: flex;
     align-items: center;
     margin-right: 10%;
+    font-size: 26px;
 }
-.Recommended .foodItem .foodBoxBottom .price .currentPrice .dollarBox {
+/* .Recommended .foodItem .foodBoxBottom .price .currentPrice .dollarBox {
     display: inline-block;
-    width: 30%;
-}
-.Recommended .foodItem .foodBoxBottom .price .currentPrice .dollarBox img {
+    width: 50%;
+} */
+.foodItem .foodBoxBottom .price .currentPrice .dollarBox img {
     display: block;
     width: 100%;
 }
-.Recommended .foodItem .foodBoxBottom .price .initialPrice {
+.foodItem .foodBoxBottom .price .initialPrice {
     display: inline;
     color: #777;
+    font-size: 19px;
     text-decoration: line-through;
 }
-.Recommended .foodItem .foodBoxBottom .order {
+.foodItem .foodBoxBottom .order {
     border: none;
     background-color: #F46801;
     color: #fff;
-    padding: 4% 7%;
+    padding: 2.5% 5%;
     border-radius: 30px;
+    font-size: 16px;
 }
