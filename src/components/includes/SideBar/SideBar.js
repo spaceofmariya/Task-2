@@ -1,5 +1,6 @@
 import React from 'react'
 import './SideBar.css'
+import { Link } from 'react-router-dom'
 import Logo from '../../../assets/images/Logo.svg'
 import Menu from '../../../assets/images/Menu.svg'
 import FoodSite from '../../../assets/images/Food-Site.svg'
@@ -18,14 +19,14 @@ function SideBar() {
         <img src={Logo} alt="Logo" />
       </div>
       <div className='middle'>
-        <div className='iconContainer'><img src={Menu} alt="Menu icon" /></div>
-        <div className='iconContainer'><img src={FoodSite} alt="Food site icon" /></div>
-        <div className='iconContainer'><img src={Favourites} alt="Favourites icon" /></div>
-        <div className='iconContainer'><img src={WhiteCard} alt="White card icon" /></div>
-        <div className='iconContainer'><img src={Cart} alt="Cart icon" /></div>
-        <div className='iconContainer'><img src={Settings} alt="Settings icon" /></div>
-        <div className='iconContainer'><img src={Profile} alt="Profile icon" /></div>
-        <div className='iconContainer'><img src={Support} alt="Support icon" /></div>
+        <Link to="/menu" className='iconContainer'><img src={Menu} alt="Menu icon" /></Link>
+        <Link to="/foodSite" className='iconContainer'><img src={FoodSite} alt="Food site icon" /></Link>
+        <Link to="/favourites" className='iconContainer'><img src={Favourites} alt="Favourites icon" /></Link>
+        <Link to="/whiteCard" className='iconContainer'><img src={WhiteCard} alt="White card icon" /></Link>
+        <Link to="/cart" className='iconContainer'><img src={Cart} alt="Cart icon" /></Link>
+        <Link to="/settings" className='iconContainer'><img src={Settings} alt="Settings icon" /></Link>
+        <Link to="/profile" className='iconContainer'><img src={Profile} alt="Profile icon" /></Link>
+        <Link to="/support" className='iconContainer'><img src={Support} alt="Support icon" /></Link>
       </div>
       <div className='bottom'>
         <img src={ProfilePhoto} alt="Profile photo" />

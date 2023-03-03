@@ -31,8 +31,8 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Menu />} />
-          <Route path="menu" element={<Menu />}>
-            <Route index element={<Recommended />} />
+          <Route exact path="menu" element={<Menu />}>
+            {/* <Route index element={<Recommended />} /> */}
             <Route path="recommended" element={<Recommended />} /> 
             <Route path="breakfast" element={<Breakfast />} /> 
             <Route path="lunch" element={<Lunch />} /> 

@@ -79,8 +79,8 @@ a {
 }
 .AppGlass {
   display: grid;
-  grid-gap: 1.5%;
-  grid-template-columns: 7rem auto 20rem;
+  grid-gap: 2.3%;
+  grid-template-columns: 8rem auto 25rem;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {

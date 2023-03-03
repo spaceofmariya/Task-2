@@ -1,22 +1,30 @@
 .Recommended {
-    width: 72vw;
+    width: 67.5%;
+    height: 65%;
     position:absolute;
-    top: 250px;
-    left: 8.6rem;
+    top: 35%;
+    left: 11rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     /* margin: 0 auto; */
 }
 .Recommended .foodItem {
     background-color: #f7f4fa;
     border-radius: 15px; 
     display: inline-block;  
-    margin-right: 2%; 
     margin-bottom: 2%;
-    /* width: 25%; */
+    width: 31%;
 }
+/* .Recommended.foodItem:first-child {
+    margin-right: 0;
+} */
 .Recommended .foodItem .foodImage {
+    width: 100%;
     margin-bottom: 7%;
 }
 .Recommended .foodItem .foodImage img {
+    width: 100%;
     border-radius: 15px;
 }
 .Recommended .foodItem h4 {
