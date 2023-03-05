@@ -1,12 +1,24 @@
-import React from 'react'
-import '../css/OtherMenu.css'
+import React from 'react';
+import styled from 'styled-components';
 
 function Cart() {
   return (
-    <div className='Cart'>
-      <h3> Coming Soon..! </h3>
-    </div>
-  )
-}
+    <CartBox className='Cart'>
+      <Content> Coming Soon.....! </Content>
+    </CartBox>
+  );
+};
 
-export default Cart
+export default Cart;
+
+const CartBox = styled.div`
+width: 67.5%;
+height: 65%;
+position:absolute;
+top: 20%;
+left: 9%;
+color: #f46801;
+`;
+const Content = styled.h3`
+font-size: 35px;
+`;

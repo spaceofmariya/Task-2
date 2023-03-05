@@ -1,32 +1,105 @@
-import React from 'react'
-import '../../css/Meals.css'
-import Image from '../../../assets/images/Recommended1.jpg'
-import Dollar from '../../../assets/images/Dollar.svg'
-import { RecommendedData } from '../../includes/Data'
+import React from 'react';
+import styled from 'styled-components';
+// import '../../css/Meals.css';
+import Menu from '../Menu';
+import Dollar from '../../../assets/images/Dollar.svg';
+import { RecommendedData } from '../../includes/Data';
 
 function Recommended() {
   return (
-    <div class='Recommended'>
+    <>
+    <Menu />
+    <SectionContainer class='Recommended'>
         {RecommendedData.map((item) => {
             return(
-                <div className='foodItem'>
-                    <div className='foodImage'>
-                        <img src={item.image} alt="Food image" />
-                    </div>
-                    <h4>Nasi Goreng Pak Parjo</h4>
-                    <div className='foodBoxBottom'>
-                        <div className='price'>
-                            <span className='currentPrice'><img src={Dollar} alt="dollar icon" />{item.value1}</span>
-                            <span className='initialPrice'>${item.value2}</span>
-                        </div>
-                        <button className='order'>Order</button>
-                    </div>
+                <FoodItem className='foodItem'>
+                    <FoodImageBox className='foodImage'>
+                        <FoodImage src={item.image} alt="Food image" />
+                    </FoodImageBox>
+                    <FoodName>Nasi Goreng Pak Parjo</FoodName>
+                    <FoodBottomBox className='foodBoxBottom'>
+                        <PriceBox className='price'>
+                            <CurrentPrice className='currentPrice'><DollarImage src={Dollar} alt="dollar icon" />{item.value1}</CurrentPrice>
+                            <InitialPrice className='initialPrice'>${item.value2}</InitialPrice>
+                        </PriceBox>
+                        <OrderButton type="button" className='order'>Order</OrderButton>
+                    </FoodBottomBox>
                     {/* <span className='dollarBox'></span> */}
-                </div>
+                </FoodItem>
             )
         })}
-    </div>
-  )
-}
+    </SectionContainer>
+    </>
+  );
+};
 
-export default Recommended
+export default Recommended;
+
+const SectionContainer = styled.div`
+    width: 67.5%;
+    height: 65%;
+    position:absolute;
+    top: 31%;
+    left: 9%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media all and (max-width:1380px) {
+        top: 28%;
+    }
+`;
+const FoodItem = styled.div`
+    background-color: #f7f4fa;
+    border-radius: 15px; 
+    display: inline-block;  
+    margin-bottom: 1.5%;
+    width: 31%;
+    height: 50%;
+`;
+const FoodImageBox = styled.div`
+    width: 100%;
+    height: 73%;
+    margin-bottom: 3%;
+`;
+const FoodImage = styled.img`
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+`;
+const FoodName = styled.h4`
+    padding: 0 5%;
+`;
+const FoodBottomBox = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+`;
+const PriceBox = styled.div`
+    display: flex;
+`;
+const CurrentPrice = styled.span`
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    font-size: 26px;
+`;
+const InitialPrice = styled.span`
+    display: inline;
+    color: #777;
+    font-size: 19px;
+    text-decoration: line-through;
+`;
+const DollarImage = styled.img`
+    display: block;
+    width: 100%;
+`;
+const OrderButton = styled.button`
+    border: none;
+    background-color: #F46801;
+    color: #fff;
+    padding: 2.5% 5%;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+`;
+

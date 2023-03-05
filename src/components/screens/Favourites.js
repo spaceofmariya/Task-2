@@ -1,12 +1,25 @@
-import React from 'react'
-import '../css/OtherMenu.css'
+import React from 'react';
+import styled from 'styled-components';
 
 function Favourites() {
   return (
-    <div className='Favourites'>
-      <h3> Coming Soon..! </h3>
-    </div>
-  )
-}
+    <FavouritesBox className='Favourites'>
+      <Content> Coming Soon.....! </Content>
+    </FavouritesBox>
+  );
+};
 
-export default Favourites
+export default Favourites;
+
+const FavouritesBox = styled.div`
+width: 67.5%;
+height: 65%;
+position:absolute;
+top: 20%;
+left: 9%;
+color: #f46801;
+`;
+const Content = styled.h3`
+font-size: 35px;
+
+`;

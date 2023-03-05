@@ -21,10 +21,37 @@ export const MenuData = [
     },
 ];
 
+export const Menudata =[
+    {
+        id: 1,
+        menu:"Recommended"
+    },
+    {
+        id: 2,
+        menu:"Breakfast"
+    },
+    {
+        id: 3,
+        menu:"Lunch"
+    },
+    {
+        id: 4,
+        menu:"Dinner"
+    },
+    {
+        id: 5,
+        menu:"Ice Cream"
+    },
+    {
+        id: 6,
+        menu:"Coffee"
+    },
+]
+
 
 // Rightbar Data
 
-export const Breakfast = [
+export const BreakFast = [
     {
         id: 1,
         image: require("../../assets/images/Breakfast1.jpg"),
@@ -286,7 +313,6 @@ export const CoffeeData =[
         value2: "20,05",
     },
 ];
-
 
 
 

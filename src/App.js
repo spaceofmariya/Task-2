@@ -30,15 +30,15 @@ function App() {
           <RightBar/>
         </div>
         <Routes>
-          <Route path="/" element={<Menu />} />
-          <Route exact path="menu" element={<Menu />}>
+          <Route path="/" element={<Recommended />} />
+          <Route exact path="menu" element={<Menu/>}>
             <Route index element={<Recommended />} />
-            <Route path="recommended" element={<Recommended />} /> 
-            <Route path="breakfast" element={<Breakfast />} /> 
-            <Route path="lunch" element={<Lunch />} /> 
-            <Route path="dinner" element={<Dinner />} /> 
-            <Route path="iceCream" element={<IceCream />} /> 
-            <Route path="coffee" element={<Coffee />} />  
+            <Route path="/menu/recommended" element={<Recommended />} /> 
+            <Route path="/menu/breakfast" element={<Breakfast />} /> 
+            <Route path="/menu/lunch" element={<Lunch />} /> 
+            <Route path="/menu/dinner" element={<Dinner />} /> 
+            <Route path="/menu/iceCream" element={<IceCream />} /> 
+            <Route path="/menu/coffee" element={<Coffee />} />  
           </Route>
           <Route path="foodSite" element={<FoodSite />} />
           <Route path="favourites" element={<Favourites />} />
