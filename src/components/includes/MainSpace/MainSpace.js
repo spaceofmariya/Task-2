@@ -15,9 +15,9 @@ function MainSpace() {
       
       <HeaderMenu className='menu'>
         <MenuContainer className='menuContainer'>
-          <Menu1 className='menuBox' style={{ backgroundColor:'#f46801' }}><NavLink1 to="/" style={{ color:"#fff" }}>Menu</NavLink1></Menu1>
-          <Menu2 className='menuBox' style={{ backgroundColor:'#eeeeee' }}><NavLink2 to="/" style={{ color:"#777" }}>Meal plans</NavLink2></Menu2>
-          <Menu3 className='menuBox' style={{ backgroundColor:'#eeeeee' }}><NavLink3 to="/" style={{ color:"#777" }}>Delivery</NavLink3></Menu3>
+          <Menu1 className='menuBox' style={{ backgroundColor:'#f46801' }}><NavLink to="/" style={{ color:"#fff" }}>Menu</NavLink></Menu1>
+          <Menu2 className='menuBox' style={{ backgroundColor:'#eeeeee' }}><NavLink to="/" style={{ color:"#777" }}>Meal plans</NavLink></Menu2>
+          <Menu3 className='menuBox' style={{ backgroundColor:'#eeeeee' }}><NavLink to="/" style={{ color:"#777" }}>Delivery</NavLink></Menu3>
         </MenuContainer>
       </HeaderMenu>
      
@@ -62,9 +62,15 @@ const Title = styled.h1`
       font-size:24px;
       margin-bottom: 8px;
     }
+    @media all and (max-width:1260px) {
+      font-size: 20px;
+    }
     @media all and (max-width:1080px){
       font-size: 27px;
       margin-bottom: 7px;
+    }
+    @media all and (max-width:980px) {
+      font-size: 24px;
     }
 `;
 const SubTitle = styled.span`
@@ -73,8 +79,14 @@ const SubTitle = styled.span`
     @media all and (max-width:1380px) {
       font-size: 12px;
     }
+    @media all and (max-width:1260px) {
+      font-size: 10px;
+    }
     @media all and (max-width:1080px){
       font-size: 14px;
+    }
+    @media all and (max-width:980px) {
+      font-size: 12px;
     }
 `;
 const HeaderMenu = styled.nav`
@@ -105,17 +117,12 @@ const Menu1 = styled.li`
       padding: 1% 7%;
       font-size: 16px;
     }
+    @media all and (max-width:980px) {
+      font-size: 14px;
+    }
 `;
 const Menu2 = styled(Menu1)``;
 const Menu3 = styled(Menu1)``;
-const NavLink1 = styled(NavLink)`
-      @media all and (max-width:1080px){
-        // font-size: 10px;
-      }
-`;
-const NavLink2 = styled(NavLink1)``;
-const NavLink3 = styled(NavLink1)``;
-
 const SearchBar = styled.div`
     background-color: #eee;
     border-radius: 30px;
@@ -143,6 +150,9 @@ const SearchText = styled.span`
     }
     @media all and (max-width:1380px) {
       font-size: 16px;
+    }
+    @media all and (max-width:980px) {
+      font-size: 15px;
     }
   
 `;

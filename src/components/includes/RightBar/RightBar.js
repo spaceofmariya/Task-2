@@ -110,6 +110,9 @@ const Rightbar = styled.div`
     padding: 7% 9%;
     background-color: #f7f4fa;
     font-family: 'Inter-SemiBold';
+    @media all and (max-width:980px) {
+      padding: 15% 9%;
+    }
 `;
 const Heading = styled.h4`
     font-size: 26px;
@@ -120,6 +123,9 @@ const Heading = styled.h4`
     }
     @media all and (max-width:1080px){
       font-size: 21px;
+    }
+    @media all and (max-width:980px) {
+      font-size: 18.5px;
     }
 `;
 const DaySelector = styled.h4`
@@ -134,18 +140,27 @@ const IconBox = styled.div`
     width: 8%;
     display: flex;
     align-items: center;
+    @media all and (max-width:980px) {
+      width: 11%;
+    }
 `;
 const IconCalender = styled.img`
     width: 100%;`;
-const Day = styled.div`
+const Day = styled.span`
     font-family: 'Inter-Regular';
     font-size: 20px;
     color: #777;
     @media all and (max-width:1380px){
       font-size: 16px;
     }
+    @media all and (max-width:1280px){
+      font-size: 15px;
+    }
     @media all and (max-width:1080px){
       font-size: 13px;
+    }
+    @media all and (max-width:980px) {
+      font-size: 10px;
     }
 `;
 const ArrowBox = styled.div`
@@ -157,9 +172,15 @@ const ArrowIcon = styled.img`
     width: 100%;`;
 const Meal = styled.div`
     margin: 8% 0;
+    @media all and (max-width:980px) {
+      margin-top: 20%;
+    }
 `;
 const BreakfastMeal = styled.div`
     margin-bottom: 6%;
+    @media all and (max-width:980px) {
+      margin-bottom: 20%;
+    }
 `;
 const LunchMeal = styled(BreakfastMeal)``;
 const DinnerMeal = styled(BreakfastMeal)``;
@@ -176,6 +197,9 @@ const SubHeading1 = styled.h5`
     @media all and (max-width:1080px){
       font-size: 16px;
     }
+    @media all and (max-width:980px) {
+      font-size: 14px;
+    }
 `;
 const SubHeading2 = styled(SubHeading1)``;
 const SubHeading3 = styled(SubHeading1)``;
@@ -188,6 +212,10 @@ const OrderStatus1 = styled.span`
     @media all and (max-width:1080px){
       font-size: 10px;
     }
+    @media all and (max-width:980px) {
+      font-size: 9px;
+      padding: 2px 4px;
+    }
 `;
 const OrderStatus2 = styled(OrderStatus1)`
     color: #e9be87;
@@ -196,11 +224,17 @@ const OrderStatus2 = styled(OrderStatus1)`
 const OrderStatus3 = styled(OrderStatus1)`
     color: #e65e6a;
     background-color:#ffe7e9;
+    @media all and (max-width:980px) {
+      font-size: 8px;
+    }
 `;
 
 const OrderTime1 = styled.span`
     display: block;
     margin-bottom: 4%;
+    @media all and (max-width:980px) {
+      font-size: 13px;
+    }
 `;
 const OrderTime2 = styled(OrderTime1)``;
 const OrderTime3 = styled(OrderTime1)``;
@@ -214,6 +248,9 @@ const FoodBox1 = styled.li`
     display: flex;
     align-items: center;
     margin-bottom: 4%;
+    @media all and (max-width:980px) {
+      margin-bottom: 8%;
+    }
 `;
 const FoodBox2 = styled(FoodBox1)``;
 const FoodBox3 = styled(FoodBox1)``;
@@ -223,8 +260,8 @@ const FoodImageBox1 = styled.div`
     @media all and (max-width:1280px) {
       width: 25%;
     }
-    @media all and (max-width:1080px){
-      width: 25%;
+    @media all and (max-width:980px){
+      width: 50%;
     }
 `;
 const FoodImageBox2 = styled(FoodImageBox1)``;
@@ -267,6 +304,12 @@ const CurrentPrice1 = styled.span`
     @media all and (max-width:1080px){
       font-size: 13px;
     }
+    @media all and (max-width:980px) {
+      font-size: 12px;
+    }
+    @media all and (max-width:980px) {
+      margin-right: 5%;
+    }
 `;
 const CurrentPrice2 = styled(CurrentPrice1)``;
 const CurrentPrice3 = styled(CurrentPrice1)``;
@@ -290,6 +333,9 @@ const InitialPrice1 = styled.span`
     @media all and (max-width:1080px){
       font-size: 13px;
     }
+    @media all and (max-width:980px) {
+      font-size: 12px;
+    }
 `;
 const InitialPrice2 = styled(InitialPrice1)``;
 const InitialPrice3 = styled(InitialPrice1)``;
@@ -312,5 +358,8 @@ const AddLink = styled.a`
     }
     @media all and (max-width:1080px){
       font-size: 14px;
+    }
+    @media all and (max-width:980px) {
+      font-size: 12px;
     }
 `;

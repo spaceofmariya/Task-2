@@ -46,7 +46,7 @@ const Sidebar = styled.div`
     align-items: center;
     @media all and (max-width:1380px) {
        padding: 25% 0;
-  }
+    }
 `;
 const Top = styled.div`
     width: 52%;
@@ -80,6 +80,9 @@ const MidItem8 = styled(MidItem1)``;
 const Bottom = styled.div`
     width: 52%;
     margin: 0 auto;
+    @media all and (max-width:980px) {
+      width: 70%;
+    }
 `;
 const PersonImage = styled.img`
     width: 100%;

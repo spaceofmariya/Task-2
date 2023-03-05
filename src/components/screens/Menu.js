@@ -66,8 +66,14 @@ const ListBox = styled.ul`
     @media all and (max-width:1080px) {
      border-bottom: none;
     }
+    @media all and (max-width:980px) {
+      width: 35%;
+    }
 `;
 const ListItem = styled.li`
     margin-right: 5%;
     padding: 0.6% 1% 0.6%;
+    @media all and (max-width:1080px) {
+      border-bottom: 2px solid #ddd;
+     }
 `;
