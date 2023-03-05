@@ -15,9 +15,9 @@ function MainSpace() {
       
       <HeaderMenu className='menu'>
         <MenuContainer className='menuContainer'>
-          <Menu1 className='menuBox' style={{ backgroundColor:'#f46801' }}><NavLink to="/" style={{ color:"#fff" }}>Menu</NavLink></Menu1>
-          <Menu2 className='menuBox' style={{ backgroundColor:'#eeeeee' }}><NavLink to="/" style={{ color:"#777" }}>Meal plans</NavLink></Menu2>
-          <Menu3 className='menuBox' style={{ backgroundColor:'#eeeeee' }}><NavLink to="/" style={{ color:"#777" }}>Delivery</NavLink></Menu3>
+          <Menu1 className='menuBox' style={{ backgroundColor:'#f46801' }}><NavLink1 to="/" style={{ color:"#fff" }}>Menu</NavLink1></Menu1>
+          <Menu2 className='menuBox' style={{ backgroundColor:'#eeeeee' }}><NavLink2 to="/" style={{ color:"#777" }}>Meal plans</NavLink2></Menu2>
+          <Menu3 className='menuBox' style={{ backgroundColor:'#eeeeee' }}><NavLink3 to="/" style={{ color:"#777" }}>Delivery</NavLink3></Menu3>
         </MenuContainer>
       </HeaderMenu>
      
@@ -38,6 +38,12 @@ const Mainspace = styled.div`
     @media all and (max-width:1380px) {
       height: 120px;
     }
+    @media all and (max-width:1080px){
+      display: block;
+    }
+    @media all and (max-width:1080px) {
+      padding-top: 3%;
+    }
 `;
 const WelcomeDiv = styled.div`
     margin-right: 6%;
@@ -45,14 +51,21 @@ const WelcomeDiv = styled.div`
       margin-right: 5%;
       width: 30%;
     }
+    @media all and (max-width:1080px){
+      width: 50%;
+    }
 `;
 const Title = styled.h1`
-margin-bottom: 13px;
-font-size: 34px;
-@media all and (max-width:1380px) {
-  font-size:24px;
-  margin-bottom: 8px;
-}
+    margin-bottom: 13px;
+    font-size: 34px;
+    @media all and (max-width:1380px) {
+      font-size:24px;
+      margin-bottom: 8px;
+    }
+    @media all and (max-width:1080px){
+      font-size: 27px;
+      margin-bottom: 7px;
+    }
 `;
 const SubTitle = styled.span`
     color: #777;
@@ -60,12 +73,20 @@ const SubTitle = styled.span`
     @media all and (max-width:1380px) {
       font-size: 12px;
     }
+    @media all and (max-width:1080px){
+      font-size: 14px;
+    }
 `;
 const HeaderMenu = styled.nav`
     width: 40%;
 `;
 const MenuContainer = styled.ul`
     display: flex;
+    @media all and (max-width:1080px){
+      position: absolute;
+      top: 2%;
+      right: 30%;
+    }
 `;
 const Menu1 = styled.li`
     display: flex;
@@ -80,9 +101,21 @@ const Menu1 = styled.li`
       padding: 2.7% 4%;
       font-size: 16px;
     }
+    @media all and (max-width:1080px){
+      padding: 1% 7%;
+      font-size: 16px;
+    }
 `;
 const Menu2 = styled(Menu1)``;
 const Menu3 = styled(Menu1)``;
+const NavLink1 = styled(NavLink)`
+      @media all and (max-width:1080px){
+        // font-size: 10px;
+      }
+`;
+const NavLink2 = styled(NavLink1)``;
+const NavLink3 = styled(NavLink1)``;
+
 const SearchBar = styled.div`
     background-color: #eee;
     border-radius: 30px;
@@ -93,6 +126,13 @@ const SearchBar = styled.div`
     @media all and (max-width:1380px) {
       padding: 0.7% 1.8%;
     }
+    @media all and (max-width:1080px){
+      display: inline-block;
+      position: absolute;
+      top: 9%;
+      right:25%;
+    }
+    
 `;
 const SearchText = styled.span`
     color:#777;
@@ -101,5 +141,9 @@ const SearchText = styled.span`
     @media all and (max-width:1380px) {
       font-size: 16px;
     }
+    @media all and (max-width:1380px) {
+      font-size: 16px;
+    }
+  
 `;
 const SearchIconBox = styled.span``;

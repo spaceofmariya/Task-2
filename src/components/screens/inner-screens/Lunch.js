@@ -49,6 +49,9 @@ const FoodItem = styled.div`
     margin-bottom: 1.5%;
     width: 31%;
     height: 50%;
+    @media all and (max-width:1080px) {
+        margin-bottom: 3%;
+    }
 `;
 const FoodImageBox = styled.div`
     width: 100%;
@@ -57,6 +60,9 @@ const FoodImageBox = styled.div`
     @media all and (max-width: 1280px) {
         height: 60%;
         margin-bottom: 10%;
+    }
+    @media all and (max-width:1080px) {
+        height: 65%;
     }
 `;
 const FoodImage = styled.img`
@@ -85,8 +91,12 @@ const CurrentPrice = styled.span`
     align-items: center;
     margin-right: 10%;
     font-size: 26px;
+    font-family:'Inter-Medium';
     @media all and (max-width:1280px) {
         font-size: 24px;
+    }
+    @media all and (max-width:1080px) {
+        font-size: 20px;
     }
 `;
 const InitialPrice = styled.span`
@@ -95,6 +105,10 @@ const InitialPrice = styled.span`
     font-size: 19px;
     text-decoration: line-through;
     margin-left: 7px;
+    @media all and (max-width:1080px) {
+        font-size: 16px;
+        margin-left: 3px;
+    }
 `;
 const DollarImage = styled.img`
     display: block;
@@ -108,4 +122,7 @@ const OrderButton = styled.button`
     border-radius: 30px;
     font-size: 16px;
     cursor: pointer;
+        @media all and (max-width:1080px) {
+        font-size: 13px;
+    }
 `;

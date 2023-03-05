@@ -38,6 +38,9 @@ const MenuBox = styled.div`
     @media all and (max-width:1380px) {
       top: 15%;
     }
+    @media all and (max-width:1080px) {
+      width: 40%;
+    }
 `;
 const MenuHeading = styled.h3`
     font-family: 'Inter-SemiBold';
@@ -45,6 +48,9 @@ const MenuHeading = styled.h3`
     margin-bottom: 1.5%;
     @media all and (max-width:1380px) {
       font-size: 24px;
+    }
+    @media all and (max-width:1080px) {
+      margin-bottom: 5%;
     }
 `;
 const MealsNavBox = styled.div`
@@ -57,6 +63,9 @@ const ListBox = styled.ul`
     display: flex;
     width: 100%;
     border-bottom: 2px solid #ddd;
+    @media all and (max-width:1080px) {
+     border-bottom: none;
+    }
 `;
 const ListItem = styled.li`
     margin-right: 5%;
