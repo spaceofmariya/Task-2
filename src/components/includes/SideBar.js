@@ -1,23 +1,25 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import Logo from '../../../assets/images/Logo.svg'
-import { ReactComponent as Menu } from '../../../assets/images/Menu.svg'
-import { ReactComponent as FoodSite } from '../../../assets/images/Food-Site.svg'
-import { ReactComponent as Favourites } from '../../../assets/images/Favourites.svg'
-import { ReactComponent as WhiteCard } from '../../../assets/images/White-Card.svg'
-import { ReactComponent as Cart } from '../../../assets/images/Cart.svg'
-import { ReactComponent as Settings } from '../../../assets/images/Settings.svg'
-import { ReactComponent as Profile } from '../../../assets/images/Profile.svg'
-import { ReactComponent as Support } from '../../../assets/images/Support.svg'
-import ProfilePhoto from '../../../assets/images/Profile-Photo.jpg'
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import Logo from '../../assets/images/Logo.svg';
+import { ReactComponent as Menu } from '../../assets/images/Menu.svg';
+import { ReactComponent as FoodSite } from '../../assets/images/Food-Site.svg';
+import { ReactComponent as Favourites } from '../../assets/images/Favourites.svg';
+import { ReactComponent as WhiteCard } from '../../assets/images/White-Card.svg';
+import { ReactComponent as Cart } from '../../assets/images/Cart.svg';
+import { ReactComponent as Settings } from '../../assets/images/Settings.svg';
+import { ReactComponent as Profile } from '../../assets/images/Profile.svg';
+import { ReactComponent as Support } from '../../assets/images/Support.svg';
+import ProfilePhoto from '../../assets/images/Profile-Photo.jpg';
 
 function SideBar() {
   return (
     <Sidebar className='SideBar'>
+
       <Top className='top'>
         <LogoImage src={Logo} alt="Logo" />
       </Top>
+      
       <Middle className='middle'>
         <MidItem1><Link to="/menu" className='iconContainer'><Menu /></Link></MidItem1>
         <MidItem2><Link to="/foodSite" className='iconContainer'><FoodSite /></Link></MidItem2>
@@ -28,14 +30,16 @@ function SideBar() {
         <MidItem7><Link to="/profile" className='iconContainer'><Profile /></Link></MidItem7>
         <MidItem8><Link to="/support" className='iconContainer'><Support /></Link></MidItem8>
       </Middle>
+
       <Bottom className='bottom'>
         <PersonImage src={ProfilePhoto} alt="Profile photo" />
       </Bottom>
-    </Sidebar>
-  )
-}
 
-export default SideBar
+    </Sidebar>
+  );
+};
+
+export default SideBar;
 
 const Sidebar = styled.div`
     height:100vh;

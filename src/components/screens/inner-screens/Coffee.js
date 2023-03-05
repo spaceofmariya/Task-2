@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { CoffeeData } from '../../includes/Data';
+import { CoffeeData } from '../../Data/Data';
 import Dollar from '../../../assets/images/Dollar.svg';
 
 function Coffee() {

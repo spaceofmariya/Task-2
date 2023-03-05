@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
-import { Menudata } from '../includes/Data';
+import { Menudata } from '../Data/Data';
 import styled from 'styled-components';
 
 function Menu() {

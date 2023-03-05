@@ -1,5 +1,4 @@
 // HeaderMenu Data
-
 export const MenuData = [
     {
         id: 1,
@@ -21,6 +20,7 @@ export const MenuData = [
     },
 ];
 
+// MainSpace Menubar Data
 export const Menudata =[
     {
         id: 1,
@@ -49,266 +49,273 @@ export const Menudata =[
 ]
 
 
-// Rightbar Data
-
+// Rightbar BreakfastData
 export const BreakFast = [
     {
         id: 1,
-        image: require("../../assets/images/Breakfast1.jpg"),
+        image: require("../../assets/images/Food7.jpg"),
     },
     {
         id: 2,
-        image: require("../../assets/images/Breakfast2.jpg"),
+        image: require("../../assets/images/Food8.jpg"),
     }
 ];
 
+// Rightbar LunchData
 export const Lunch = [
     {
         id: 1,
-        image: require("../../assets/images/Lunch1.jpg"),
+        image: require("../../assets/images/Food9.jpg"),
     },
     {
         id: 2,
-        image: require("../../assets/images/Lunch2.jpg"),
+        image: require("../../assets/images/Food10.jpg"),
     }
 ];
 
+// RightBar DinnerData
 export const Dinner = [
     {
         id: 1,
-        image: require("../../assets/images/Dinner1.jpg"),
+        image: require("../../assets/images/Food12.jpg"),
     }
 ];
 
+// Recommended Page Data
 export const RecommendedData =[
     {
         id: 1,
-        image: require("../../assets/images/Recommended1.jpg"),
+        image: require("../../assets/images/Food1.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 2,
-        image: require("../../assets/images/Recommended2.jpg"),
+        image: require("../../assets/images/Food2.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
         id: 3,
-        image: require("../../assets/images/Recommended3.jpg"),
+        image: require("../../assets/images/Food3.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
         id: 4,
-        image: require("../../assets/images/Recommended4.jpg"),
+        image: require("../../assets/images/Food4.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
         id: 5,
-        image: require("../../assets/images/Recommended5.jpg"),
+        image: require("../../assets/images/Food5.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 6,
-        image: require("../../assets/images/Recommended6.jpg"),
+        image: require("../../assets/images/Food6.jpg"),
         value1: "18,00",
         value2: "20,05",
     },
 ];
 
+// Breakfast Page Data
 export const BreakfastData =[
     {
         id: 1,
-        image: require("../../assets/images/Breakfast1.jpg"),
+        image: require("../../assets/images/Food7.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 2,
-        image: require("../../assets/images/Breakfast2.jpg"),
+        image: require("../../assets/images/Food8.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
         id: 3,
-        image: require("../../assets/images/Recommended3.jpg"),
+        image: require("../../assets/images/Food1.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
         id: 4,
-        image: require("../../assets/images/Recommended4.jpg"),
+        image: require("../../assets/images/Food6.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
         id: 5,
-        image: require("../../assets/images/Recommended5.jpg"),
+        image: require("../../assets/images/Food3.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 6,
-        image: require("../../assets/images/Recommended6.jpg"),
+        image: require("../../assets/images/Food2.jpg"),
         value1: "18,00",
         value2: "20,05",
     },
 ];
 
+// Lunch Page Data
 export const LunchData =[
     {
         id: 1,
-        image: require("../../assets/images/Lunch1.jpg"),
+        image: require("../../assets/images/Food9.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 2,
-        image: require("../../assets/images/Lunch2.jpg"),
+        image: require("../../assets/images/Food10.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
         id: 3,
-        image: require("../../assets/images/Lunch3.jpg"),
+        image: require("../../assets/images/Food11.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
         id: 4,
-        image: require("../../assets/images/Recommended4.jpg"),
+        image: require("../../assets/images/Food3.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
         id: 5,
-        image: require("../../assets/images/Recommended5.jpg"),
+        image: require("../../assets/images/Food5.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 6,
-        image: require("../../assets/images/Recommended6.jpg"),
+        image: require("../../assets/images/Food1.jpg"),
         value1: "18,00",
         value2: "20,05",
     },
 ];
 
+// Dinner Page Data
 export const DinnerData =[
     {
         id: 1,
-        image: require("../../assets/images/Dinner1.jpg"),
+        image: require("../../assets/images/Food11.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 2,
-        image: require("../../assets/images/Recommended2.jpg"),
+        image: require("../../assets/images/Food2.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
         id: 3,
-        image: require("../../assets/images/Recommended3.jpg"),
+        image: require("../../assets/images/Food3.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
         id: 4,
-        image: require("../../assets/images/Recommended4.jpg"),
+        image: require("../../assets/images/Food6.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
         id: 5,
-        image: require("../../assets/images/Recommended5.jpg"),
+        image: require("../../assets/images/Food5.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 6,
-        image: require("../../assets/images/Recommended6.jpg"),
+        image: require("../../assets/images/Food4.jpg"),
         value1: "18,00",
         value2: "20,05",
     },
 ];
 
+// Icecream Page Data
 export const IceCreamData =[
     {
         id: 1,
-        image: require("../../assets/images/Recommended1.jpg"),
+        image: require("../../assets/images/Food6.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 2,
-        image: require("../../assets/images/Recommended2.jpg"),
+        image: require("../../assets/images/Food5.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
         id: 3,
-        image: require("../../assets/images/Recommended3.jpg"),
+        image: require("../../assets/images/Food4.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
         id: 4,
-        image: require("../../assets/images/Recommended4.jpg"),
+        image: require("../../assets/images/Food3.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
         id: 5,
-        image: require("../../assets/images/Recommended5.jpg"),
+        image: require("../../assets/images/Food2.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 6,
-        image: require("../../assets/images/Recommended6.jpg"),
+        image: require("../../assets/images/Food1.jpg"),
         value1: "18,00",
         value2: "20,05",
     },
 ];
 
+// Coffee Page Data
 export const CoffeeData =[
     {
         id: 1,
-        image: require("../../assets/images/Recommended1.jpg"),
+        image: require("../../assets/images/Food2.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 2,
-        image: require("../../assets/images/Recommended2.jpg"),
+        image: require("../../assets/images/Food4.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
         id: 3,
-        image: require("../../assets/images/Recommended3.jpg"),
+        image: require("../../assets/images/Food6.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
         id: 4,
-        image: require("../../assets/images/Recommended4.jpg"),
+        image: require("../../assets/images/Food8.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
         id: 5,
-        image: require("../../assets/images/Recommended5.jpg"),
+        image: require("../../assets/images/Food10.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
         id: 6,
-        image: require("../../assets/images/Recommended6.jpg"),
+        image: require("../../assets/images/Food11.jpg"),
         value1: "18,00",
         value2: "20,05",
     },

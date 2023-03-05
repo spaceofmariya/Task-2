@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { DinnerData } from '../../includes/Data';
+import { DinnerData } from '../../Data/Data';
 import Dollar from '../../../assets/images/Dollar.svg';
 
 function Dinner() {

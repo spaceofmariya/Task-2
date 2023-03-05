@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IceCreamData } from '../../includes/Data';
+import { IceCreamData } from '../../Data/Data';
 import Dollar from '../../../assets/images/Dollar.svg';
 
 function IceCream() {

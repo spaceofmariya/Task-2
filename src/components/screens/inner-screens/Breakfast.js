@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { BreakfastData } from '../../includes/Data';
+import { BreakfastData } from '../../Data/Data';
 import Dollar from '../../../assets/images/Dollar.svg';
 import Menu from '../Menu';
 

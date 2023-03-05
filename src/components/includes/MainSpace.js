@@ -1,8 +1,7 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { MenuData } from '../Data'
-import { ReactComponent as SearchIcon } from '../../../assets/images/Search.svg'
-import styled from 'styled-components'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { ReactComponent as SearchIcon } from '../../assets/images/Search.svg';
+import styled from 'styled-components';
 
 function MainSpace() {
   return (
@@ -15,19 +14,28 @@ function MainSpace() {
       
       <HeaderMenu className='menu'>
         <MenuContainer className='menuContainer'>
-          <Menu1 className='menuBox' style={{ backgroundColor:'#f46801' }}><NavLink to="/" style={{ color:"#fff" }}>Menu</NavLink></Menu1>
-          <Menu2 className='menuBox' style={{ backgroundColor:'#eeeeee' }}><NavLink to="/" style={{ color:"#777" }}>Meal plans</NavLink></Menu2>
-          <Menu3 className='menuBox' style={{ backgroundColor:'#eeeeee' }}><NavLink to="/" style={{ color:"#777" }}>Delivery</NavLink></Menu3>
+          <Menu1 className='menuBox' style={{ backgroundColor:'#f46801' }}>
+            <NavLink to="/" style={{ color:"#fff" }}>Menu</NavLink>
+          </Menu1>
+          <Menu2 className='menuBox' style={{ backgroundColor:'#eeeeee' }}>
+            <NavLink to="/" style={{ color:"#777" }}>Meal plans</NavLink>
+          </Menu2>
+          <Menu3 className='menuBox' style={{ backgroundColor:'#eeeeee' }}>
+            <NavLink to="/" style={{ color:"#777" }}>Delivery</NavLink>
+          </Menu3>
         </MenuContainer>
       </HeaderMenu>
      
-      <SearchBar className='search'><SearchText className='searchText'>Search your food...</SearchText><SearchIconBox className='searchIcon'><SearchIcon /></SearchIconBox></SearchBar>
+      <SearchBar className='search'>
+        <SearchText className='searchText'>Search your food...</SearchText>
+        <SearchIconBox className='searchIcon'><SearchIcon /></SearchIconBox>
+        </SearchBar>
 
     </Mainspace>
-  )
-}
+  );
+};
 
-export default MainSpace
+export default MainSpace;
 
 const Mainspace = styled.div`
     height: 130px; 

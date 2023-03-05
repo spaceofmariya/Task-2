@@ -1,9 +1,9 @@
 
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import SideBar from './components/includes/SideBar/SideBar';
-import MainSpace from './components/includes/MainSpace/MainSpace';
-import RightBar from './components/includes/RightBar/RightBar';
+import SideBar from './components/includes/SideBar';
+import MainSpace from './components/includes/MainSpace';
+import RightBar from './components/includes/RightBar';
 import Menu from './components/screens/Menu'
 import FoodSite from './components/screens/FoodSite'
 import Favourites from './components/screens/Favourites'

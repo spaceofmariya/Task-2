@@ -1,16 +1,16 @@
-import React, { useState } from 'react'
-// import './RightBar.css'
-import CalenderIcon from '../../../assets/images/Calender-Icon.svg'
-import DownArrow from '../../../assets/images/Down-Arrow.svg'
-import Dollar from '../../../assets/images/Dollar.svg'
-import { BreakFast, Lunch, Dinner } from '../Data'
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import CalenderIcon from '../../assets/images/Calender-Icon.svg';
+import DownArrow from '../../assets/images/Down-Arrow.svg';
+import Dollar from '../../assets/images/Dollar.svg';
+import { BreakFast, Lunch, Dinner } from '../Data/Data';
+import styled from 'styled-components';
 // import Breakfast, {renderItem} from '../../screens/inner-screens/Breakfast'
 
 function RightBar() {
   // const BData = useState(...Breakfast,...renderItem);
   return (
     <Rightbar className="RightBar">
+
       <Heading>Your meal plan</Heading>
       <DaySelector className='daySelector'>
         <IconBox className='iconBox'>
@@ -33,11 +33,17 @@ function RightBar() {
             {BreakFast.map((item) => {
               return(
                 <FoodBox1 key={item.id}>
-                  <FoodImageBox1 className='foodBox'><FoodImage1 src={item.image} alt="food" /></FoodImageBox1>
+                  <FoodImageBox1 className='foodBox'>
+                    <FoodImage1 src={item.image} alt="food" />
+                  </FoodImageBox1>
                   <FoodTextBox1 className='textBox'>
                     <FoodName1>Nasi Padang Patikraja</FoodName1>
                     <Price1 className='price'>
-                      <CurrentPrice1 className='currentPrice'><DollarBox1 className='dollarBox'><DollarImage src={Dollar} alt="dollar icon" /></DollarBox1>8,10</CurrentPrice1>
+                      <CurrentPrice1 className='currentPrice'>
+                        <DollarBox1 className='dollarBox'>
+                          <DollarImage src={Dollar} alt="dollar icon" />
+                        </DollarBox1>8,10
+                      </CurrentPrice1>
                       <InitialPrice1 className='initialPrice'>$10,10</InitialPrice1>
                     </Price1>
                   </FoodTextBox1>
@@ -57,11 +63,17 @@ function RightBar() {
             {Lunch.map((item) => {
               return(
                 <FoodBox2 key={item.id}>
-                  <FoodImageBox2 className='foodBox'><FoodImage2 src={item.image} alt="food" /></FoodImageBox2>
+                  <FoodImageBox2 className='foodBox'>
+                    <FoodImage2 src={item.image} alt="food" />
+                  </FoodImageBox2>
                   <FoodTextBox2 className='textBox'>
                     <FoodName2>Nasi Padang Patikraja</FoodName2>
                     <Price2 className='price'>
-                      <CurrentPrice2 className='currentPrice'><DollarBox2 className='dollarBox'><DollarImage src={Dollar} alt="dollar icon" /></DollarBox2>8,10</CurrentPrice2>
+                      <CurrentPrice2 className='currentPrice'>
+                        <DollarBox2 className='dollarBox'>
+                          <DollarImage src={Dollar} alt="dollar icon" />
+                        </DollarBox2>8,10
+                      </CurrentPrice2>
                       <InitialPrice2 className='initialPrice'>$10,10</InitialPrice2>
                     </Price2>
                   </FoodTextBox2>
@@ -81,11 +93,17 @@ function RightBar() {
             {Dinner.map((item) => {
               return(
                 <FoodBox3 key={item.id}>
-                  <FoodImageBox3 className='foodBox'><FoodImage3 src={item.image} alt="food" /></FoodImageBox3>
+                  <FoodImageBox3 className='foodBox'>
+                    <FoodImage3 src={item.image} alt="food" />
+                  </FoodImageBox3>
                   <FoodTextBox3 className='textBox'>
                     <FoodName3>Nasi Padang Patikraja</FoodName3>
                     <Price3 className='price'>
-                      <CurrentPrice3 className='currentPrice'><DollarBox3 className='dollarBox'><DollarImage src={Dollar} alt="dollar icon" /></DollarBox3>8,10</CurrentPrice3>
+                      <CurrentPrice3 className='currentPrice'>
+                        <DollarBox3 className='dollarBox'>
+                          <DollarImage src={Dollar} alt="dollar icon" />
+                        </DollarBox3>8,10
+                      </CurrentPrice3>
                       <InitialPrice3 className='initialPrice'>$10,10</InitialPrice3>
                     </Price3>
                   </FoodTextBox3>
@@ -99,11 +117,12 @@ function RightBar() {
       <AddButton className='add'>
         <AddLink href='#'>Drop here to add</AddLink>
       </AddButton>
+      
     </Rightbar>
-  )
-}
+  );
+};
 
-export default RightBar
+export default RightBar;
 
 const Rightbar = styled.div`
     height: 100vh;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // import '../../css/Meals.css';
 import Menu from '../Menu';
 import Dollar from '../../../assets/images/Dollar.svg';
-import { RecommendedData } from '../../includes/Data';
+import { RecommendedData } from '../../Data/Data';
 
 function Recommended() {
   return (
