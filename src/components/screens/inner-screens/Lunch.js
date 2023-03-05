@@ -30,69 +30,82 @@ function Lunch() {
 export default Lunch;
 
 const SectionContainer = styled.div`
-width: 67.5%;
-height: 65%;
-position:absolute;
-top: 31%;
-left: 9%;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-@media all and (max-width:1380px) {
-    top: 28%;
-}
+    width: 67.5%;
+    height: 65%;
+    position:absolute;
+    top: 31%;
+    left: 9%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media all and (max-width:1380px) {
+        top: 28%;
+    }
 `;
 const FoodItem = styled.div`
-background-color: #f7f4fa;
-border-radius: 15px; 
-display: inline-block;  
-margin-bottom: 1.5%;
-width: 31%;
-height: 50%;
+    background-color: #f7f4fa;
+    border-radius: 15px; 
+    display: inline-block;  
+    margin-bottom: 1.5%;
+    width: 31%;
+    height: 50%;
 `;
 const FoodImageBox = styled.div`
-width: 100%;
-height: 73%;
-margin-bottom: 3%;
+    width: 100%;
+    height: 73%;
+    margin-bottom: 3%;
+    @media all and (max-width: 1280px) {
+        height: 60%;
+        margin-bottom: 10%;
+    }
 `;
 const FoodImage = styled.img`
-width: 100%;
-height: 100%;
-border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 `;
 const FoodName = styled.h4`
-padding: 0 5%;
+    padding: 0 5%;
+    font-family: 'Inter-Light';
 `;
 const FoodBottomBox = styled.div`
-display: flex;
-justify-content: space-between;
-padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 5%;
+    margin-top: 1%;
+    @media all and (max-width: 1280px) {
+        margin-top: 8%;
+    }
 `;
 const PriceBox = styled.div`
-display: flex;
+    display: flex;
 `;
 const CurrentPrice = styled.span`
-display: flex;
-align-items: center;
-margin-right: 10%;
-font-size: 26px;
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    font-size: 26px;
+    @media all and (max-width:1280px) {
+        font-size: 24px;
+    }
 `;
 const InitialPrice = styled.span`
-display: inline;
-color: #777;
-font-size: 19px;
-text-decoration: line-through;
+    display: inline;
+    color: #777;
+    font-size: 19px;
+    text-decoration: line-through;
+    margin-left: 7px;
 `;
 const DollarImage = styled.img`
-display: block;
-width: 100%;
+    display: block;
+    width: 100%;
 `;
 const OrderButton = styled.button`
-border: none;
-background-color: #F46801;
-color: #fff;
-padding: 2.5% 5%;
-border-radius: 30px;
-font-size: 16px;
-cursor: pointer;
+    border: none;
+    background-color: #F46801;
+    color: #fff;
+    padding: 2.5% 5%;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
 `;

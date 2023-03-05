@@ -48,16 +48,17 @@ const MenuHeading = styled.h3`
     }
 `;
 const MealsNavBox = styled.div`
-font-size: 0;
+    font-size: 0;
 `;
 const MealsNavBar = styled.nav`
-width: 100%;
+    width: 100%;
 `;
 const ListBox = styled.ul`
-display: flex;
-width: 100%;
-border-bottom: 2px solid #ddd;
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid #ddd;
 `;
 const ListItem = styled.li`
-margin-right: 5%;
-padding: 0.6% 1% 0.6%;`;
+    margin-right: 5%;
+    padding: 0.6% 1% 0.6%;
+`;

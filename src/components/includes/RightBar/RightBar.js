@@ -208,6 +208,9 @@ const FoodBox3 = styled(FoodBox1)``;
 const FoodImageBox1 = styled.div`
 width: 20%;
 margin-right: 5%;
+@media all and (max-width:1280px) {
+  width: 25%;
+}
 `;
 const FoodImageBox2 = styled(FoodImageBox1)``;
 const FoodImageBox3 = styled(FoodImageBox1)``;
@@ -224,6 +227,10 @@ const FoodTextBox3 = styled(FoodTextBox1)``;
 const FoodName1 = styled.h6`
 font-size: 15px;
 margin-bottom: 10px;
+@media all and (max-width:1280px) {
+  font-size: 13px;
+  margin-bottom: 7px;
+}
 `;
 const FoodName2 = styled(FoodName1)``;
 const FoodName3 = styled(FoodName1)``;
@@ -236,6 +243,9 @@ const CurrentPrice1 = styled.span`
 display: flex;
 align-items: center;
 margin-right: 10%;
+@media all and (max-width:1280px) {
+  font-size: 15px;
+}
 `;
 const CurrentPrice2 = styled(CurrentPrice1)``;
 const CurrentPrice3 = styled(CurrentPrice1)``;
@@ -253,6 +263,9 @@ const InitialPrice1 = styled.span`
 display: inline;
 color: #777;
 text-decoration: line-through;
+@media all and (max-width:1280px) {
+  font-size: 15px;
+}
 `;
 const InitialPrice2 = styled(InitialPrice1)``;
 const InitialPrice3 = styled(InitialPrice1)``;
@@ -269,5 +282,8 @@ const AddLink = styled.a`
     font-size: 18px;
     @media all and (max-width: 1380px) {
       font-size: 17px;
+    }
+    @media all and (max-width: 1280px) {
+      font-size: 16px;
     }
 `;

@@ -60,6 +60,10 @@ const FoodImageBox = styled.div`
     width: 100%;
     height: 73%;
     margin-bottom: 3%;
+    @media all and (max-width: 1280px) {
+        height: 60%;
+        margin-bottom: 10%;
+    }
 `;
 const FoodImage = styled.img`
     width: 100%;
@@ -68,11 +72,16 @@ const FoodImage = styled.img`
 `;
 const FoodName = styled.h4`
     padding: 0 5%;
+    font-family: 'Inter-Light';
 `;
 const FoodBottomBox = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 2% 5%;
+    padding: 0% 5%;
+    margin-top: 1%;
+    @media all and (max-width: 1280px) {
+        margin-top: 8%;
+    }
 `;
 const PriceBox = styled.div`
     display: flex;
@@ -82,12 +91,17 @@ const CurrentPrice = styled.span`
     align-items: center;
     margin-right: 10%;
     font-size: 26px;
+    font-family:'Inter-Medium';
+    @media all and (max-width:1280px) {
+        font-size: 24px;
+    }
 `;
 const InitialPrice = styled.span`
     display: inline;
     color: #777;
     font-size: 19px;
     text-decoration: line-through;
+    margin-left: 7px;
 `;
 const DollarImage = styled.img`
     display: block;
