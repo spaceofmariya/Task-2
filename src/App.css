@@ -46,15 +46,6 @@ a {
 }
 
 @font-face {
-  font-family: 'Inter-Bold';
-  src: url('./assets/fonts/Inter-Bold.woff2') format('woff2'),
-      url('./assets/fonts/Inter-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Inter-Light';
   src: url('./assets/fonts/Inter-Light.woff2') format('woff2'),
       url('./assets/fonts/Inter-Light.woff') format('woff');
@@ -81,29 +72,3 @@ a {
   grid-gap: 2%;
   grid-template-columns: 7% auto 21%;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

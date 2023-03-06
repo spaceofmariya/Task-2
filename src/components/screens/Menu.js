@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
-import { Menudata } from '../Data/Data';
+import '../../App.css'
 import styled from 'styled-components';
 
 function Menu() {
-  const [activeId, setActiveId] = useState();
+
+  const navLinkStyle = ({isActive}) => {
+    return {
+      color: isActive ? '#e3912c' : '#777',
+      textDecoration: 'none',
+      fontSize: '20px', 
+    }
+  }
   return (
     <>
     <MenuBox className='Menu'>
@@ -12,12 +19,24 @@ function Menu() {
       <MealsNavBox className='mealsNav'>
         <MealsNavBar>
           <ListBox>
-            <ListItem><NavLink className={({isActive}) => isActive?"active":""} to="/menu/recommended" style={{color:"#777", textDecoration:"none", fontSize:"20px"}}>Recommended</NavLink></ListItem>
-            <ListItem><NavLink className={({isActive}) => isActive?"active":""} to="/menu/breakfast" style={{color:"#777", textDecoration:"none", fontSize:"20px"}}>Breakfast</NavLink></ListItem>
-            <ListItem><NavLink className={({isActive}) => isActive?"active":""} to="/menu/lunch" style={{color:"#777", textDecoration:"none", fontSize:"20px"}}>Lunch</NavLink></ListItem>
-            <ListItem><NavLink className={({isActive}) => isActive?"active":""} to="/menu/dinner" style={{color:"#777", textDecoration:"none", fontSize:"20px"}}>Dinner</NavLink></ListItem>
-            <ListItem><NavLink className={({isActive}) => isActive?"active":""} to="/menu/iceCream" style={{color:"#777", textDecoration:"none", fontSize:"20px"}}>Icecream</NavLink></ListItem>
-            <ListItem><NavLink className={({isActive}) => isActive?"active":""} to="/menu/coffee" style={{color:"#777", textDecoration:"none", fontSize:"20px"}}>Coffee</NavLink></ListItem> 
+            <ListItem>
+              <NavLink className={({isActive}) => isActive?"active":""} to="/menu/recommended" style={navLinkStyle}>Recommended</NavLink>
+              </ListItem>
+            <ListItem>
+              <NavLink className={({isActive}) => isActive?"active":""} to="/menu/breakfast" style={navLinkStyle}>Breakfast</NavLink>
+              </ListItem>
+            <ListItem>
+              <NavLink className={({isActive}) => isActive?"active":""} to="/menu/lunch" style={navLinkStyle}>Lunch</NavLink>
+              </ListItem>
+            <ListItem>
+              <NavLink className={({isActive}) => isActive?"active":""} to="/menu/dinner" style={navLinkStyle}>Dinner</NavLink>
+              </ListItem>
+            <ListItem>
+              <NavLink className={({isActive}) => isActive?"active":""} to="/menu/iceCream" style={navLinkStyle}>Icecream</NavLink>
+              </ListItem>
+            <ListItem>
+              <NavLink className={({isActive}) => isActive?"active":""} to="/menu/coffee" style={navLinkStyle}>Coffee</NavLink>
+              </ListItem> 
           </ListBox>
         </MealsNavBar>
       </MealsNavBox>
@@ -73,7 +92,4 @@ const ListBox = styled.ul`
 const ListItem = styled.li`
     margin-right: 5%;
     padding: 0.6% 1% 0.6%;
-    @media all and (max-width:1080px) {
-      border-bottom: 2px solid #ddd;
-     }
 `;

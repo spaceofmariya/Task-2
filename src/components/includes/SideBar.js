@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/images/Logo.svg';
 import { ReactComponent as Menu } from '../../assets/images/Menu.svg';
 import { ReactComponent as FoodSite } from '../../assets/images/Food-Site.svg';
@@ -13,6 +13,15 @@ import { ReactComponent as Support } from '../../assets/images/Support.svg';
 import ProfilePhoto from '../../assets/images/Profile-Photo.jpg';
 
 function SideBar() {
+
+  const navLinkStyle = ({isActive}) => {
+    return {
+      backgroundColor: isActive ? '#e3912c' : '#f46801',
+      padding: '50%',
+      borderRadius: '50%',
+    }
+  }
+
   return (
     <Sidebar className='SideBar'>
 
@@ -21,14 +30,14 @@ function SideBar() {
       </Top>
       
       <Middle className='middle'>
-        <MidItem1><Link to="/menu" className='iconContainer'><Menu /></Link></MidItem1>
-        <MidItem2><Link to="/foodSite" className='iconContainer'><FoodSite /></Link></MidItem2>
-        <MidItem3><Link to="/favourites" className='iconContainer'><Favourites /></Link></MidItem3>
-        <MidItem4><Link to="/whiteCard" className='iconContainer'><WhiteCard /></Link></MidItem4>
-        <MidItem5><Link to="/cart" className='iconContainer'><Cart /></Link></MidItem5>
-        <MidItem6><Link to="/settings" className='iconContainer'><Settings /></Link></MidItem6>
-        <MidItem7><Link to="/profile" className='iconContainer'><Profile /></Link></MidItem7>
-        <MidItem8><Link to="/support" className='iconContainer'><Support /></Link></MidItem8>
+        <MidItem1><NavLink to="/menu" className={({isActive}) => isActive?"active":""} style={navLinkStyle}><Menu /></NavLink></MidItem1>
+        <MidItem2><NavLink to="/foodSite" className={({isActive}) => isActive?"active":""} style={navLinkStyle}><FoodSite /></NavLink></MidItem2>
+        <MidItem3><NavLink to="/favourites" className={({isActive}) => isActive?"active":""} style={navLinkStyle}><Favourites /></NavLink></MidItem3>
+        <MidItem4><NavLink to="/whiteCard" className={({isActive}) => isActive?"active":""} style={navLinkStyle}><WhiteCard /></NavLink></MidItem4>
+        <MidItem5><NavLink to="/cart" className={({isActive}) => isActive?"active":""} style={navLinkStyle}><Cart /></NavLink></MidItem5>
+        <MidItem6><NavLink to="/settings" className={({isActive}) => isActive?"active":""} style={navLinkStyle}><Settings /></NavLink></MidItem6>
+        <MidItem7><NavLink to="/profile" className={({isActive}) => isActive?"active":""} style={navLinkStyle}><Profile /></NavLink></MidItem7>
+        <MidItem8><NavLink to="/support" className={({isActive}) => isActive?"active":""} style={navLinkStyle}><Support /></NavLink></MidItem8>
       </Middle>
 
       <Bottom className='bottom'>
@@ -61,18 +70,23 @@ const LogoImage = styled.img`
 const Middle = styled.ul`
     background-color: #F46801;
     width: 60%;
-    padding: 13% 0;
+    padding: 13%;
     margin: auto;
     border-radius: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media all and (max-width:1140px) {
+       padding: 13% 40%;
+    }
+    @media all and (max-width:980px) {
+       padding: 13% 46%;
+    }
 `;
 const MidItem1 = styled.li`
-    padding: 20%;
-    @media all and (max-width:1380px) {
-      padding: 25%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 const MidItem2 = styled(MidItem1)``;
 const MidItem3 = styled(MidItem1)``;

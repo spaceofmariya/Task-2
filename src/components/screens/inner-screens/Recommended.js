@@ -1,18 +1,49 @@
-import React from 'react';
+import React,{ createContext, useState, useEffect } from 'react';
 import styled from 'styled-components';
-// import '../../css/Meals.css';
 import Menu from '../Menu';
 import Dollar from '../../../assets/images/Dollar.svg';
-import { RecommendedData } from '../../Data/Data';
+import { RecommendedData, BreakFast } from '../../Data/Data';
+export { ExportItem } from './Recommended';
+
+
 
 function Recommended() {
+    const ExportItem = createContext();
+    const [list, setList] = useState({});
+    const sendItem = (id) => {
+        let new_item = RecommendedData.find((item) => item.id == id)
+        setList({new_item});
+        ExportItem(list);
+    }
+    
+//     interface addItemValue {
+//         dataNew :NewData[],
+//         setNewData:(data:NewData[]) => void
+//        }
+   
+//        const addItem: addItemValue = {
+//          dataNew:[
+//           {id: "",
+//            image: "",
+//           }],
+//          setNewData: (data) => {}
+//        }
+// const ExportItem = React.createContext<addItemValue>(addItem);
+
+
+
+//     let sendItem = () => {
+//         return ExportItem;
+//     } 
+
   return (
     <>
     <Menu />
     <SectionContainer class='Recommended'>
         {RecommendedData.map((item) => {
             return(
-                <FoodItem className='foodItem'>
+                <ExportItem.Provider value = {item.image}>
+                <FoodItem className='foodItem' key={item.id}>
                     <FoodImageBox className='foodImage'>
                         <FoodImage src={item.image} alt="Food image" />
                     </FoodImageBox>
@@ -22,10 +53,10 @@ function Recommended() {
                             <CurrentPrice className='currentPrice'><DollarImage src={Dollar} alt="dollar icon" />{item.value1}</CurrentPrice>
                             <InitialPrice className='initialPrice'>${item.value2}</InitialPrice>
                         </PriceBox>
-                        <OrderButton type="button" className='order'>Order</OrderButton>
+                        <OrderButton type="button" className='order' onClick={() => sendItem(item.id)}>Order</OrderButton>
                     </FoodBottomBox>
-                    {/* <span className='dollarBox'></span> */}
                 </FoodItem>
+                </ExportItem.Provider>
             )
         })}
     </SectionContainer>

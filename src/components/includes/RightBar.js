@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { sendItem } from '../screens/inner-screens/Recommended';
 import CalenderIcon from '../../assets/images/Calender-Icon.svg';
 import DownArrow from '../../assets/images/Down-Arrow.svg';
 import Dollar from '../../assets/images/Dollar.svg';
@@ -7,6 +8,9 @@ import styled from 'styled-components';
 // import Breakfast, {renderItem} from '../../screens/inner-screens/Breakfast'
 
 function RightBar() {
+
+  // const newItem = useContext(ExportItem);
+  // const NewBreakFast = [...BreakFast,...newItem]
   // const BData = useState(...Breakfast,...renderItem);
   return (
     <Rightbar className="RightBar">
