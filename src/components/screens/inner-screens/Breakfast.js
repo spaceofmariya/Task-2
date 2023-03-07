@@ -6,10 +6,7 @@ import Menu from '../Menu';
 
 
 function Breakfast() {
-    // const [addItem,setAddItem] = useState({})
-    // const exportItem = () => {
-    //     setAddItem(BreakfastData.)
-    // }
+
   return (
     <SectionContainer class='BreakFast'>
         {BreakfastData.map((item) => {
