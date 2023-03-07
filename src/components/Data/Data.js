@@ -64,11 +64,11 @@ export const BreakFast = [
 // Rightbar LunchData
 export const Lunch = [
     {
-        id: 1,
+        id: 3,
         image: require("../../assets/images/Food9.jpg"),
     },
     {
-        id: 2,
+        id: 4,
         image: require("../../assets/images/Food10.jpg"),
     }
 ];
@@ -76,7 +76,7 @@ export const Lunch = [
 // RightBar DinnerData
 export const Dinner = [
     {
-        id: 1,
+        id: 5,
         image: require("../../assets/images/Food12.jpg"),
     }
 ];
@@ -84,37 +84,37 @@ export const Dinner = [
 // Recommended Page Data
 export const RecommendedData =[
     {
-        id: 1,
+        id: 6,
         image: require("../../assets/images/Food1.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 2,
+        id: 7,
         image: require("../../assets/images/Food2.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
-        id: 3,
+        id: 8,
         image: require("../../assets/images/Food3.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
-        id: 4,
+        id: 9,
         image: require("../../assets/images/Food4.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
-        id: 5,
+        id: 10,
         image: require("../../assets/images/Food5.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 6,
+        id: 11,
         image: require("../../assets/images/Food6.jpg"),
         value1: "18,00",
         value2: "20,05",
@@ -124,37 +124,37 @@ export const RecommendedData =[
 // Breakfast Page Data
 export const BreakfastData =[
     {
-        id: 1,
+        id: 12,
         image: require("../../assets/images/Food7.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 2,
+        id: 13,
         image: require("../../assets/images/Food8.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
-        id: 3,
+        id: 14,
         image: require("../../assets/images/Food1.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
-        id: 4,
+        id: 15,
         image: require("../../assets/images/Food6.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
-        id: 5,
+        id: 16,
         image: require("../../assets/images/Food3.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 6,
+        id: 17,
         image: require("../../assets/images/Food2.jpg"),
         value1: "18,00",
         value2: "20,05",
@@ -164,37 +164,37 @@ export const BreakfastData =[
 // Lunch Page Data
 export const LunchData =[
     {
-        id: 1,
+        id: 18,
         image: require("../../assets/images/Food9.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 2,
+        id: 19,
         image: require("../../assets/images/Food10.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
-        id: 3,
+        id: 20,
         image: require("../../assets/images/Food11.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
-        id: 4,
+        id: 21,
         image: require("../../assets/images/Food3.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
-        id: 5,
+        id: 22,
         image: require("../../assets/images/Food5.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 6,
+        id: 23,
         image: require("../../assets/images/Food1.jpg"),
         value1: "18,00",
         value2: "20,05",
@@ -204,37 +204,37 @@ export const LunchData =[
 // Dinner Page Data
 export const DinnerData =[
     {
-        id: 1,
+        id: 24,
         image: require("../../assets/images/Food11.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 2,
+        id: 25,
         image: require("../../assets/images/Food2.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
-        id: 3,
+        id: 26,
         image: require("../../assets/images/Food3.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
-        id: 4,
+        id: 27,
         image: require("../../assets/images/Food6.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
-        id: 5,
+        id: 28,
         image: require("../../assets/images/Food5.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 6,
+        id: 29,
         image: require("../../assets/images/Food4.jpg"),
         value1: "18,00",
         value2: "20,05",
@@ -244,37 +244,37 @@ export const DinnerData =[
 // Icecream Page Data
 export const IceCreamData =[
     {
-        id: 1,
+        id: 30,
         image: require("../../assets/images/Food6.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 2,
+        id: 31,
         image: require("../../assets/images/Food5.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
-        id: 3,
+        id: 32,
         image: require("../../assets/images/Food4.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
-        id: 4,
+        id: 33,
         image: require("../../assets/images/Food3.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
-        id: 5,
+        id: 34,
         image: require("../../assets/images/Food2.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 6,
+        id: 35,
         image: require("../../assets/images/Food1.jpg"),
         value1: "18,00",
         value2: "20,05",
@@ -284,37 +284,37 @@ export const IceCreamData =[
 // Coffee Page Data
 export const CoffeeData =[
     {
-        id: 1,
+        id: 36,
         image: require("../../assets/images/Food2.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 2,
+        id: 37,
         image: require("../../assets/images/Food4.jpg"),
         value1: "9,10",
         value2: "12,10",
     },
     {
-        id: 3,
+        id: 38,
         image: require("../../assets/images/Food6.jpg"),
         value1: "5,60",
         value2: "10,24",
     },
     {
-        id: 4,
+        id: 39,
         image: require("../../assets/images/Food8.jpg"),
         value1: "9,24",
         value2: "10,10",
     },
     {
-        id: 5,
+        id: 40,
         image: require("../../assets/images/Food10.jpg"),
         value1: "8,10",
         value2: "10,10",
     },
     {
-        id: 6,
+        id: 41,
         image: require("../../assets/images/Food11.jpg"),
         value1: "18,00",
         value2: "20,05",

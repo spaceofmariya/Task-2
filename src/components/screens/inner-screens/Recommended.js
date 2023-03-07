@@ -1,11 +1,21 @@
-import React,{ createContext, useState, useEffect } from 'react';
+import React,{ useContext, useState } from 'react';
 import styled from 'styled-components';
 import Menu from '../Menu';
 import Dollar from '../../../assets/images/Dollar.svg';
 import { RecommendedData } from '../../Data/Data';
+import { DataContext } from '../../../App';
 
 function Recommended() {
     
+    const [count,setCount] = useState(0);
+    const { BreakFast, loading, setLoading } = useContext(DataContext);
+    const handleOrder = (id) => {
+        setCount(count + 1);
+        let orderData = RecommendedData.filter((item) => item.id === id)
+        BreakFast.push(orderData[0])
+        setLoading(!loading)
+    }
+
   return (
     <>
     <Menu />
@@ -23,10 +33,9 @@ function Recommended() {
                             <CurrentPrice className='currentPrice'><DollarImage src={Dollar} alt="dollar icon" />{item.value1}</CurrentPrice>
                             <InitialPrice className='initialPrice'>${item.value2}</InitialPrice>
                         </PriceBox>
-                        <OrderButton type="button" className='order'>Order</OrderButton>
+                        <OrderButton type="button" className='order' onClick={() => handleOrder(item.id)}>Order</OrderButton>
                     </FoodBottomBox>
-                </FoodItem>
-                
+                </FoodItem>    
             )
         })}
     </SectionContainer>

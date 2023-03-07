@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import CalenderIcon from '../../assets/images/Calender-Icon.svg';
 import DownArrow from '../../assets/images/Down-Arrow.svg';
 import Dollar from '../../assets/images/Dollar.svg';
-import { BreakFast, Lunch, Dinner } from '../Data/Data';
+import { Lunch, Dinner } from '../Data/Data';
 import styled from 'styled-components';
+import { DataContext } from '../../App';
 
 function RightBar() {
+
+  const { BreakFast } = useContext(DataContext);
 
   return (
     <Rightbar className="RightBar">

@@ -1,28 +1,35 @@
-
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { createContext, useState } from "react";
+import { BreakFast } from './components/Data/Data';
 import SideBar from './components/includes/SideBar';
 import MainSpace from './components/includes/MainSpace';
 import RightBar from './components/includes/RightBar';
-import Menu from './components/screens/Menu'
-import FoodSite from './components/screens/FoodSite'
-import Favourites from './components/screens/Favourites'
-import WhiteCard from './components/screens/WhiteCard'
-import Cart from './components/screens/Cart'
-import Settings from './components/screens/Settings'
-import Profile from './components/screens/Profile'
-import Support from './components/screens/Support'
-import Recommended from './components/screens/inner-screens/Recommended'
-import Breakfast from './components/screens/inner-screens/Breakfast'
-import Lunch from './components/screens/inner-screens/Lunch'
-import Dinner from './components/screens/inner-screens/Dinner'
-import IceCream from './components/screens/inner-screens/IceCream'
-import Coffee from './components/screens/inner-screens/Coffee'
+import Menu from './components/screens/Menu';
+import FoodSite from './components/screens/FoodSite';
+import Favourites from './components/screens/Favourites';
+import WhiteCard from './components/screens/WhiteCard';
+import Cart from './components/screens/Cart';
+import Settings from './components/screens/Settings';
+import Profile from './components/screens/Profile';
+import Support from './components/screens/Support';
+import Recommended from './components/screens/inner-screens/Recommended';
+import Breakfast from './components/screens/inner-screens/Breakfast';
+import Lunch from './components/screens/inner-screens/Lunch';
+import Dinner from './components/screens/inner-screens/Dinner';
+import IceCream from './components/screens/inner-screens/IceCream';
+import Coffee from './components/screens/inner-screens/Coffee';
+
+export const DataContext = createContext();
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
   return (
     
     <div className="App">
+      <DataContext.Provider value={{BreakFast, loading, setLoading}}>
       <Router>
         <div className="AppGlass">
           <SideBar />
@@ -48,11 +55,11 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="support" element={<Support />} />
         </Routes>
-        {/* <Recommended /> */}
       </Router>
+      </DataContext.Provider>
     </div>
 
   );
-}
+};
 
 export default App;
