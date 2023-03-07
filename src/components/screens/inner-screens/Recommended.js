@@ -9,7 +9,7 @@ function Recommended() {
   return (
     <>
     <Menu />
-    <SectionContainer class='Recommended'>
+    <SectionContainer className='Recommended'>
         {RecommendedData.map((item) => {
             return(
                 

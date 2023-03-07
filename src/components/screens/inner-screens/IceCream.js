@@ -5,10 +5,10 @@ import Dollar from '../../../assets/images/Dollar.svg';
 
 function IceCream() {
   return (
-    <SectionContainer class='Recommended'>
+    <SectionContainer className='IceCream'>
         {IceCreamData.map((item) => {
             return(
-                <FoodItem className='foodItem'>
+                <FoodItem className='foodItem' key={item.id}>
                     <FoodImageBox className='foodImage'>
                         <FoodImage src={item.image} alt="Food image" />
                     </FoodImageBox>

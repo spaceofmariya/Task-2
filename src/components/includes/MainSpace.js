@@ -4,6 +4,7 @@ import { ReactComponent as SearchIcon } from '../../assets/images/Search.svg';
 import styled from 'styled-components';
 
 function MainSpace() {
+
   return (
     <Mainspace className='MainSpace'>
 

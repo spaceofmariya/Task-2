@@ -5,10 +5,10 @@ import Dollar from '../../../assets/images/Dollar.svg';
 
 function Coffee() {
   return (
-    <SectionContainer class='Recommended'>
+    <SectionContainer className='Coffee'>
         {CoffeeData.map((item) => {
             return(
-                <FoodItem className='foodItem'>
+                <FoodItem className='foodItem' key={item.id}>
                     <FoodImageBox className='foodImage'>
                         <FoodImage src={item.image} alt="Food image" />
                     </FoodImageBox>

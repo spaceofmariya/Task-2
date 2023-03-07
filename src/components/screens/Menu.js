@@ -12,6 +12,7 @@ function Menu() {
       fontSize: '20px', 
     }
   }
+  
   return (
     <>
     <MenuBox className='Menu'>

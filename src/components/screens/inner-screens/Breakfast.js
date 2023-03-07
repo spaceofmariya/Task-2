@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { BreakfastData } from '../../Data/Data';
 import Dollar from '../../../assets/images/Dollar.svg';
-import Menu from '../Menu';
-
 
 function Breakfast() {
-
   return (
-    <SectionContainer class='BreakFast'>
+    <SectionContainer className='BreakFast'>
         {BreakfastData.map((item) => {
             return(
-                <FoodItem className='foodItem'>
+                <FoodItem className='foodItem' key={item.id}>
                     <FoodImageBox className='foodImage'>
                         <FoodImage src={item.image} alt="Food image" />
                     </FoodImageBox>
@@ -29,7 +26,6 @@ function Breakfast() {
     </SectionContainer>
   );
 };
-// onClick={()=>exportItem()}
 
 export default Breakfast;
 
